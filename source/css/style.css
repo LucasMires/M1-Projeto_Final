@@ -1,0 +1,253 @@
+body { 
+    font-family: 'Inter', sans-serif;
+}
+
+#cabecalho {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 3.7rem;
+    box-shadow: 2px 4px 17px 0px rgba(0,0,0,0.10);
+}
+
+#logo {
+    font-size: 28px;
+    font-weight: bold;
+    margin-left: 10vw;
+    color: #333333;
+}
+
+#menu {
+    margin-right: 10vw;
+    display: flex;
+    gap: 1.2rem;
+}
+
+#menu a {
+    text-decoration: none;
+    color: #333333;
+    font-size: 16px;
+    transition: 350ms;
+}
+#menu a:hover {
+    color: #828282;
+}
+
+#container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+}
+
+.sessaoProdutos {
+    max-width: 80%;
+    margin-bottom: 2rem;
+    margin-right: 3%;
+}
+
+#vitrine {
+    margin-top: 2.5rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    width: 56.3vw;
+}
+
+.card {
+    border: 2px solid #F5F5F5;
+    display: flex;
+    flex-direction: column;
+    width: 32%;
+    padding: 1%;
+    gap: 1rem;
+    transition: 350ms;
+}
+.card:hover {
+    border: 2px solid #37268C;
+}
+.card:hover img {
+    transform: scale(1.06);
+}
+
+.boxCardImg {
+    align-self: center;
+    overflow: hidden;
+}
+
+.cardImg {
+    width: 100%;
+    transition: 350ms;
+}
+
+.cardCategory {
+    background-color: #2E245E;
+    font-size: 0.8rem;
+    color: #fff;
+    padding: 0.2rem;
+    max-width: 35%;
+    text-align: center;
+}
+
+.cardName {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.cardPreco{
+    color: #2E245E;
+    max-width: 35%;
+    font-weight: 600;
+    cursor: pointer;
+}
+.cardPreco:hover { 
+    text-decoration: underline;
+}
+
+.cardButton {
+    width: 65%;
+    text-decoration: none;
+    color: #000;
+    font-weight: 500;
+    cursor: pointer;
+}
+.cardButton:hover {
+    color: #37268C;
+    text-decoration: underline;
+}
+
+.foraDeEstoque {
+    font-size: 1.5rem;
+}
+.soldOut {
+    border-radius: 1rem;
+    margin-top: 2rem;
+    max-width: 95%;
+}
+
+.sessaoCarrinho {
+    box-sizing: border-box;
+    margin-top: 2.5rem;
+    width: 25%;
+}
+
+#entradas {
+    display: flex;
+    max-width: 100%;
+    gap: 5px;
+}
+#entradas input {
+    width: 65%;
+    height: 2rem;
+    background-color: #F5F5F5;
+    border: none;
+    padding: 3%;
+}
+#entradas button {
+    width: 35%;
+    font-size: 0.9rem;
+    background-color: #2E245E;
+    border: none;
+    color: #fff;
+    transition: 350ms;
+    cursor: pointer;
+}
+
+#entradas button:hover {
+    background-color: #4f4fa8;
+}
+
+#carrinhoDeCompras {
+    margin-top: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 2px 4px 17px 0px rgba(0,0,0,0.20);
+}
+
+#carrinhoTitle {
+    background-color: #2E245E;
+    width: 100%;
+    text-align: center;
+    color: #fff;
+    padding: 5%;
+    font-weight: 500;
+}
+
+#carrinho {
+    background-color: #F5F5F5;
+    display: flex;
+    flex-direction: column;
+    min-height: 20vh;
+    max-height: 50vh;
+    padding: 2%;
+    text-align: center;
+    gap: 0.5rem;
+    overflow-y: auto;
+}
+
+.titleCarrinho {
+    margin-top: 2.3rem;
+    font-size: 1.3rem;
+    font-weight: 600;
+    align-self: center;
+}
+.pCarrinho {
+    font-size: 0.9rem;
+    align-self: center;
+}
+
+.liCarrinho {
+    width: 100%;
+    display: flex;
+    color: #000;
+    padding: 0.5rem;
+    justify-content: space-between;
+    border: 2px solid #2E245E;
+    border-radius: 0.3rem;
+    background-color: #fff;
+}
+
+.imgCarrinho {
+    max-width: 40%;
+}
+
+.boxValues {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    min-height: 15vh;
+    gap: 0.7rem;
+}
+
+.h2Carrinho {
+    font-weight: 500;
+    font-size: 1.3rem;
+}
+
+.precoCarrinho {
+    color: #2E245E;
+    font-weight: 600;
+}
+
+.buttonCarrinho {
+    align-self: center;
+    font-size: 1.2rem;
+    border: 1px solid #000;
+    border-radius: 1rem;
+    background-color: #000;
+    color: #fff;
+    padding: 4%;
+    transition: 350ms;
+    cursor: pointer;
+}
+.buttonCarrinho:hover {
+    color: #2E245E;
+    border: 1px solid #828282;
+    background-color: #fff;
+}
+
+.notFound {
+    font-size: 1.5rem;
+    font-weight: 500;
+    margin-top: 2rem;
+}
